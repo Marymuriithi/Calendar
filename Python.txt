@@ -1,0 +1,61 @@
+#python 3.7.1
+#Mary Muriithi
+#I have created a program which can access all months and years as you wish.
+print("####################")
+print("##########CALENDAR##########")
+print("#########KEEP UPDATE  TAP#####")
+print("####################")
+
+import calendar
+import time
+def menu():
+    time.sleep(1.5)
+    print("\nWHAT DO YOU WANT?")
+    print("TYPE 1 TO SEE ONE YEAR CALENDAR")
+    print("TYPE 2 TO SEE MONTH CALENDAR")
+menu()
+def option():
+    choice = int(input(""))
+    if choice == 1:
+        year = int(input("\nENTER THE YEAR:"))
+        print("")
+        print(calendar.month(year,1))
+        time.sleep(0.5)
+        print(calendar.month(year,2))
+        time.sleep(0.5)
+        print(calendar.month(year,3))
+        time.sleep(0.5)
+        print(calendar.month(year,4))
+        time.sleep(0.5)
+        print(calendar.month(year,5))
+        time.sleep(0.5)
+        print(calendar.month(year,6))
+        time.sleep(0.5)
+        print(calendar.month(year,7))
+        time.sleep(0.5)
+        print(calendar.month(year,8))
+        time.sleep(0.5)
+        print(calendar.month(year,9))
+        time.sleep(0.5)
+        print(calendar.month(year,10))
+        time.sleep(0.5)
+        print(calendar.month(year,11))
+        time.sleep(0.5)
+        print(calendar.month(year,12))
+    else:
+        year2 = int(input("\nENTER THE YEAR : "))
+        month = int(input("\nENTER THE MONTH : "))
+        time.sleep(1)
+        print("")
+        print (calendar.month(year2 ,month))
+    def again():
+      print("WHAT AGAIN?")
+      menu()
+      option()
+    again()
+option()
+print("Mary Muriithi")
+        
+        
+        
+        
